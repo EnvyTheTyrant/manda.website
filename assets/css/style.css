@@ -2332,6 +2332,13 @@ hr {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
+.pricing-item .lui-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
 
 .lui-subtitle strong,
 .lui-subtitle b {
@@ -3320,7 +3327,7 @@ hr {
 .pricing-item .icon {
   margin-top: 15px;
   font-size: 41px;
-  min-height: 50px;
+  min-height: 0px;
   line-height: 1;
   color: #29a587;
 }
