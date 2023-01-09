@@ -95,6 +95,12 @@ iframe {
   top: 7px;
 }
 
+.contact-text {
+  color: #29a587;
+  font-weight: 500;
+  font-size: larger;
+}
+
 .comment-form-cookies-consent label {
   display: inline-block;
   vertical-align: top;
