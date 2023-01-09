@@ -115,10 +115,10 @@ iframe {
 .sale1 {
   padding: 0 25px;
   position: absolute;
-  top: -16px;
+  top: -25px;
   right: 0px;
   height: 54px;
-  line-height: 48px;
+  line-height: 50px;
   font-size: 28px;
   text-transform: uppercase;
   color: #fff;
@@ -133,12 +133,12 @@ iframe {
   -webkit-border-radius: 26px;
 }
 
-.sale1 p {
+.sale1 span {
   color: #fff;
   font-size: 10px;
   text-align: center;
   position: absolute;
-  top: -10px;
+  bottom: -15px;
   right: 50%;
   transform: translateX(50%);
 }
