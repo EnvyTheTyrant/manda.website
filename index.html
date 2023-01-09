@@ -1387,7 +1387,7 @@
                     <div class="icon"></div>
                     <div class="price">
                       <span> 99 <b>$</b> </span>
-                      <em>Up To A Week</em>
+                      <em>Up To A Week Turnaround</em>
                     </div>
                     <div class="lui-text">
                       <div>
@@ -1437,7 +1437,7 @@
                     <div class="icon"></div>
                     <div class="price">
                       <span> 299 <b>$</b> </span>
-                      <em>Up To A Week</em>
+                      <em>Up To A Week Turnaround</em>
                     </div>
                     <div class="lui-text">
                       <div>
@@ -1617,6 +1617,8 @@
                       <form
                         action="https://formsubmit.co/85475decc8cc23cc5e508ae4ecbd8f2d"
                         method="POST"
+                        novalidate
+                        onsubmit="return validateForm(this)"
                       >
                         <!-- HoneyPot -->
                         <input
@@ -1631,14 +1633,14 @@
                         <input
                           type="hidden"
                           name="_next"
-                          value="http://127.0.0.1:5502/thanks.html"
+                          value="http://www.manda.website/"
                         />
                         <div class="row">
                           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                             <div class="group">
                               <label>
                                 Your Full Name <b>*</b>
-                                <input type="text" name="Name" />
+                                <input type="text" name="Name" required />
                               </label>
                             </div>
                           </div>
@@ -1646,7 +1648,7 @@
                             <div class="group">
                               <label>
                                 Your Email Address <b>*</b>
-                                <input type="email" name="Email" />
+                                <input type="email" name="Email" required />
                               </label>
                             </div>
                           </div>
@@ -1654,7 +1656,7 @@
                             <div class="group">
                               <label>
                                 Your Subject <b>*</b>
-                                <input type="text" name="Subject" />
+                                <input type="text" name="Subject" required />
                               </label>
                             </div>
                           </div>
@@ -1762,5 +1764,40 @@
     <script src="assets/js/jquery.cookie.js"></script>
     <script src="assets/js/typed.js"></script>
     <script src="assets/js/common.js"></script>
+    <script>
+      function validateForm(form) {
+        // Check each input field for errors
+        if (!form.elements.Name.value) {
+          // Display an error message if the Name field is empty
+          alert("Please enter your name");
+          return false;
+        }
+        if (!form.elements.Email.value) {
+          // Display an error message if the Email field is empty
+          alert("Please enter your email address");
+          return false;
+        } else {
+          // Check the format of the email address
+          var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,7}$/;
+          if (!regex.test(form.elements.Email.value)) {
+            // Display an error message if the email address is not in the correct format
+            alert("Please enter a valid email address");
+            return false;
+          }
+        }
+        if (!form.elements.Subject.value) {
+          // Display an error message if the Subject field is empty
+          alert("Please enter a subject");
+          return false;
+        }
+        if (!form.elements.Message.value) {
+          // Display an error message if the Message field is empty
+          alert("Please enter a message");
+          return false;
+        }
+        // If no errors are found, submit the form
+        return true;
+      }
+    </script>
   </body>
 </html>
