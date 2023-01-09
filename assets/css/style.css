@@ -112,7 +112,7 @@ iframe {
   color: #ccc;
 }
 
-.sale {
+.sale1 {
   padding: 0 25px;
   position: absolute;
   top: -16px;
@@ -133,7 +133,7 @@ iframe {
   -webkit-border-radius: 26px;
 }
 
-.sale p {
+.sale1 p {
   color: #fff;
   font-size: 10px;
   text-align: center;
