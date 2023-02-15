@@ -2847,8 +2847,7 @@ hr {
   padding: 0 15px;
   position: absolute;
   top: -12px;
-  right: 50%;
-  transform: translateX(-50%);
+  right: 10%;
   height: 26px;
   line-height: 22px;
   font-size: 13px;
